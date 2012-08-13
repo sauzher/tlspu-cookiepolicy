@@ -4,7 +4,7 @@ function hideCookiePolicy() {
     });
 }
 function displayCookiePolicy() {
-    jQuery("#viewlet-cookiepolicy").each(function() {
+    $("#viewlet-cookiepolicy").each(function() {
         jQuery(this).slideDown(500);
     });
 }
