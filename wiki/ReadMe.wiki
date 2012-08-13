@@ -14,6 +14,7 @@ Tested with
 Should also work with
 
     - Plone 4.0.x (http://plone.org/products/plone)
+
     - Plone 3.3.x (http://plone.org/products/plone)
 
 ==Screenshot==
