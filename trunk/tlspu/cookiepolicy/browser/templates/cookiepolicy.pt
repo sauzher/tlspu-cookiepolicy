@@ -7,9 +7,9 @@
     <p id="tlspu_cookiepolicy_message"
         tal:content="view/message">Message</p>
     <form id="tlspu_cookiepolicy_form">
-    <input type="checkbox" id="tlspu_cookiepolicy_agreed" value="confirmed">
+    <input type="checkbox" id="tlspu_cookiepolicy_agreed" value="confirmed" />
     <label for="tlspu_cookiepolicy_agreed">I have read and understood this message.</label>
-    <button disabled="disabled" id="tlspu_cookiepolicy_button">Hide this message</button>
+    <button disabled="disabled" id="tlspu_cookiepolicy_button" value="hide">Hide this message</button>
     </form>
 </div>
 
