@@ -35,7 +35,7 @@ class ICookiePolicySchema(Interface):
         ),
         required=True,
     )
-    
+
     TCP_message = Text(
         title=_(u'Message'),
         description=_(u'help_tcp_message',
@@ -61,7 +61,7 @@ class CookiePolicyControlPanelAdapter(BaseControlPanelAdapter):
     TCP_enabled = ProxyFieldProperty(ICookiePolicySchema['TCP_enabled'])
     TCP_title = ProxyFieldProperty(ICookiePolicySchema['TCP_title'])
     TCP_message = ProxyFieldProperty(ICookiePolicySchema['TCP_message'])
-    
+
 baseset = FormFieldsets(ICookiePolicySchema)
 baseset.id = 'cookiepolicy'
 baseset.label = _(u'Cookie Policy')
