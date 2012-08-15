@@ -12,7 +12,7 @@ Functional test:
     >>> browser.open(portalURL + '/login_form')
     >>> browser.getControl(name='__ac_name').value = SITE_OWNER_NAME
     >>> browser.getControl(name='__ac_password').value = SITE_OWNER_PASSWORD
-    >>> browser.getControl(name='submit').click()
+    >>> browser.getControl(name='submit').click()  # XXX This gives: AttributeError: control 'None' is disabled
 
     >>> 'You are now logged in' in browser.contents
     True
