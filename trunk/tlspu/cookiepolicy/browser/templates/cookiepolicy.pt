@@ -5,7 +5,7 @@
     <h1 id="tlspu_cookiepolicy_title"
         tal:content="view/title">Title</h1>
     <p id="tlspu_cookiepolicy_message"
-        tal:content="view/message">Message</p>
+        tal:content="structure view/message">Message</p>
     <form id="tlspu_cookiepolicy_form">
     <input type="checkbox" id="tlspu_cookiepolicy_agreed" value="confirmed" />
     <label for="tlspu_cookiepolicy_agreed">I have read and understood this message.</label>
