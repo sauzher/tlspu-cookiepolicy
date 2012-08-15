@@ -32,6 +32,9 @@ For sites outside of the EU, or targetting non-EU users it's a reasonable idea t
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      extras_require={
+          'test': ['plone.app.testing'],
+      },
       entry_points = """
           [z3c.autoinclude.plugin]
           target = plone
