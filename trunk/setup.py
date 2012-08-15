@@ -33,8 +33,8 @@ For sites outside of the EU, or targetting non-EU users it's a reasonable idea t
           # -*- Extra requirements: -*-
       ],
       entry_points = """
-		  [z3c.autoinclude.plugin]
-	      target = plone
-      # -*- Entry points: -*-
+          [z3c.autoinclude.plugin]
+          target = plone
+          # -*- Entry points: -*-
       """,
       )
