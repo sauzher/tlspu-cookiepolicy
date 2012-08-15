@@ -3,9 +3,9 @@
 """Main product initializer
 """
 
-from tlspu.cookiepolicy import config
 from zope.i18nmessageid import MessageFactory
 TCPMessageFactory = MessageFactory('tlspu.cookiepolicy')
+
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product.

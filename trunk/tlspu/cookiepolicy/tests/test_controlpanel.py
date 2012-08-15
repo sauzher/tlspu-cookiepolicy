@@ -19,7 +19,8 @@ class ControlPanelTest(unittest.TestCase):
         self.portal = self.layer['portal']
 
     def test_controlpanel_view(self):
-        view = getMultiAdapter((self.portal, self.portal.REQUEST), name='cookiepolicy')
+        view = getMultiAdapter((self.portal, self.portal.REQUEST),
+                               name='cookiepolicy')
         view = view.__of__(self.portal)
         self.failUnless(view())
 
@@ -27,11 +28,13 @@ class ControlPanelTest(unittest.TestCase):
         # control panel view can not be accessed by anonymous users
         from AccessControl import Unauthorized
         logout()
-        self.assertRaises(Unauthorized, self.portal.restrictedTraverse, '@@cookiepolicy')
+        self.assertRaises(Unauthorized, self.portal.restrictedTraverse,
+                          '@@cookiepolicy')
 
     def test_configlet_install(self):
         controlpanel = getToolByName(self.portal, 'portal_controlpanel')
-        installed = [a.getAction(self)['id'] for a in controlpanel.listActions()]
+        installed = [a.getAction(self)['id']
+                     for a in controlpanel.listActions()]
         self.failUnless('cookiepolicy' in installed)
 
 
