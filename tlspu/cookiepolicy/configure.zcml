@@ -28,4 +28,28 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     />
+
+    <!-- Register special import steps -->
+    <genericsetup:importStep
+        name="tlspu.cookiepolicy.install"
+        title="tlspu.cookiepolicy: miscellaneous import steps for installing this package"
+        description=""
+        handler="tlspu.cookiepolicy.setuphandlers.install"
+        />
+    <genericsetup:importStep
+        name="tlspu.cookiepolicy.uninstall"
+        title="tlspu.cookiepolicy: miscellaneous import steps for uninstalling this package"
+        description=""
+        handler="tlspu.cookiepolicy.setuphandlers.uninstall"
+        />
+
+    <!-- Register upgrade steps -->
+    <genericsetup:upgradeStep
+        title="Remove persistent import steps"
+        description="Remove our persistent import steps from the registry."
+        source="2000"
+        destination="2001"
+        handler="tlspu.cookiepolicy.setuphandlers.remove_persistent_import_step"
+        profile="tlspu.cookiepolicy:default" />
+
 </configure>
