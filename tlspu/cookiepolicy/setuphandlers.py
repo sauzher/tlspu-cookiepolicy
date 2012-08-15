@@ -18,8 +18,8 @@ def uninstall(context):
         return
 
     portal = context.getSite()
-    portal_conf = getToolByName(portal, 'portal_controlpanel')
-    portal_conf.unregisterConfiglet('@@likes-providers')
+    #portal_conf = getToolByName(portal, 'portal_controlpanel')
+    #portal_conf.unregisterConfiglet('@@likes-providers')
 
     # Remove tweetmeme_properties in portal properties
     pp = getToolByName('portal_properties')
