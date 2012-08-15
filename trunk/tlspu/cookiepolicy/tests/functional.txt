@@ -16,8 +16,3 @@ Functional test:
 
     >>> 'You are now logged in' in browser.contents
     True
-
-    >>> browser.open(portalURL + '/@@likes-providers')
-    >>> 'Configure settings for social like actions' in browser.contents
-    True
-
