@@ -18,6 +18,7 @@ from plone.fieldsets.fieldsets import FormFieldsets
 
 from tlspu.cookiepolicy import TCPMessageFactory as _
 
+
 class ICookiePolicySchema(Interface):
     """ Cookie Policy configuration """
 
@@ -38,11 +39,14 @@ class ICookiePolicySchema(Interface):
 
     TCP_message = Text(
         title=_(u'Message'),
-        description=_(u'help_tcp_message',
-            default=u"Enter the message for the CookiePolicy panel. This may contain HTML",
+        description=_(
+            u'help_tcp_message',
+            default=(u"Enter the message for the CookiePolicy panel. This may "
+                     u"contain HTML"),
         ),
         required=True,
     )
+
 
 class BaseControlPanelAdapter(SchemaAdapterBase):
     """ Base control panel adapter """
@@ -65,6 +69,7 @@ class CookiePolicyControlPanelAdapter(BaseControlPanelAdapter):
 baseset = FormFieldsets(ICookiePolicySchema)
 baseset.id = 'cookiepolicy'
 baseset.label = _(u'Cookie Policy')
+
 
 class CookiePolicyControlPanel(ControlPanelForm):
     """ """

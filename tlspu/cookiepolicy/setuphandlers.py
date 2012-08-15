@@ -1,5 +1,6 @@
 from Products.CMFCore.utils import getToolByName
 
+
 def install(context):
 
     # Ordinarily, GenericSetup handlers check for the existence of XML files.
@@ -12,12 +13,13 @@ def install(context):
 
     # Add additional setup code here
 
+
 def uninstall(context):
 
     if context.readDataFile('tlspu.cookiepolicy_uninstall.txt') is None:
         return
 
-    portal = context.getSite()
+    #portal = context.getSite()
     #portal_conf = getToolByName(portal, 'portal_controlpanel')
     #portal_conf.unregisterConfiglet('@@likes-providers')
 
@@ -29,4 +31,3 @@ def uninstall(context):
             pp.manage_delObjects(ids='tlspu_cookiepolicy_properties')
     except KeyError:
         pass
-
