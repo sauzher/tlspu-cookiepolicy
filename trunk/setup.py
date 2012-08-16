@@ -2,7 +2,7 @@ import os
 
 from setuptools import setup, find_packages
 
-readme = '\n'.join(open('README.rst').readlines())
+readme = open('README.rst').read()
 
 version = '1.1.1'
 
