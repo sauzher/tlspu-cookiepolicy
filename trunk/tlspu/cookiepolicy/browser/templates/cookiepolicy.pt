@@ -8,8 +8,8 @@
         tal:content="structure view/message">Message</p>
     <form id="tlspu_cookiepolicy_form">
     <input type="checkbox" id="tlspu_cookiepolicy_agreed" value="confirmed" />
-    <label for="tlspu_cookiepolicy_agreed">I have read and understood this message.</label>
-    <button disabled="disabled" id="tlspu_cookiepolicy_button" value="hide">Hide this message</button>
+    <label for="tlspu_cookiepolicy_agreed" i18n:translate="">I have read and understood this message.</label>
+    <button disabled="disabled" id="tlspu_cookiepolicy_button" value="hide" i18n:translate="">Hide this message</button>
     </form>
 </div>
 
