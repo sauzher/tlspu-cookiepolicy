@@ -3,13 +3,14 @@ import os
 from setuptools import setup, find_packages
 
 readme = open('README.rst').read()
+changes = open('CHANGES.rst').read()
 
-version = '1.1.1'
+version = '1.1.2.dev0'
 
 setup(name = 'tlspu.cookiepolicy',
       version = version,
       description = 'A Plone add-on providing a simple solution to comply with the so called "European Cookie Law".',
-      long_description = readme,
+      long_description = readme + '\n' + changes,
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers = [
         "Framework :: Plone",
