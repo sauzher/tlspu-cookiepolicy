@@ -38,6 +38,7 @@ Requirements
 
 Tested with
 
+    - Plone 4.2.x (http://plone.org/products/plone)
     - Plone 4.1.x (http://plone.org/products/plone)
 
 Should also work with
@@ -45,10 +46,12 @@ Should also work with
     - Plone 4.0.x (http://plone.org/products/plone)
     - Plone 3.3.x (http://plone.org/products/plone)
 
+
 Screenshot
 -----------
 
     .. image:: http://www.tlspu.com/consultancy/cookiepolicy-screenshot.png
+
 
 Installation
 ------------
@@ -69,11 +72,13 @@ To enable this product, on a buildout based installation:
 After updating the configuration you need to run the ''bin/buildout'',
 which will take care of updating your system.
 
+
 Using in a Plone Site
-----------------------
+---------------------
+
 
 Step 1: Activate it
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 Go to the 'Site Setup' page in the Plone interface and click on the
 'Add/Remove Products' link.
@@ -81,8 +86,9 @@ Go to the 'Site Setup' page in the Plone interface and click on the
 Choose the product **TLSPU Cookie Policy** (check checkbox at its left side)
 and click the 'Activate' button.
 
+
 Step 2: Configure it
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 Go to the 'Site Setup' page in the Plone interface and click on the
 'Cookie Policy' link -- under Add-on Configuration.
@@ -91,8 +97,9 @@ Go to the 'Site Setup' page in the Plone interface and click on the
 
 There you can configure how **TLSPU Cookie Policy** will behave.
 
+
 Uninstall
--------------
+---------
 
 Go to the 'Site Setup' page in the Plone interface and click on the
 'Add/Remove Products' link.
@@ -103,8 +110,12 @@ add-ons*, (check checkbox at its left side) and click the 'Deactivate' button.
 .. note:: You may have to empty your browser cache and save your resource 
           registries in order to see the effects of the product installation.
 
+
 Contributing
---------------
+------------
+
+The source code is hosted at
+http://code.google.com/p/tlspu-cookiepolicy/
 
 
 Sponsoring
@@ -113,9 +124,12 @@ Sponsoring
 Development of this product was sponsored by :
     
     * `Historica <http://www.historica.co.uk/>`_
+
     
 Credits
 -------
     
     * `Adrian Hungate <http://www.tlspu.com/contact-us>`_ - Idea and implementation.
 
+    * `Maurits van Rees <http://zestsoftware.nl/>`_ - General
+      improvement and Dutch translations.
