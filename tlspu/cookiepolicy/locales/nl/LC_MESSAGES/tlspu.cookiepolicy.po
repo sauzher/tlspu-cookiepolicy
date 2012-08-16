@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tlspu.cookiepolicy 1.0\n"
-"POT-Creation-Date: 2012-08-16 12:14+0000\n"
-"PO-Revision-Date: 2012-08-16 14:14 +0200\n"
+"POT-Creation-Date: 2012-08-16 12:22+0000\n"
+"PO-Revision-Date: 2012-08-16 14:23 +0200\n"
 "Last-Translator: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
 "Language-Team: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
 "MIME-Version: 1.0\n"
@@ -33,9 +33,17 @@ msgstr "Cookie Policy instellingen"
 msgid "Enable Cookie Policy"
 msgstr "Schakel de cookiepolicy in"
 
+#: ./browser/templates/cookiepolicy.pt:12
+msgid "Hide this message"
+msgstr "Verberg deze melding"
+
+#: ./browser/templates/cookiepolicy.pt:11
+msgid "I have read and understood this message."
+msgstr "Ik heb deze melding gelezen en begrepen."
+
 #: ./controlpanel/cookiepolicy.py:41
 msgid "Message"
-msgstr "Boodschap"
+msgstr "Melding"
 
 #: ./controlpanel/cookiepolicy.py:33
 msgid "This Site Uses Cookies"
@@ -48,7 +56,7 @@ msgstr "Titel"
 #. Default: "Enter the message for the CookiePolicy panel. This may contain HTML"
 #: ./controlpanel/cookiepolicy.py:42
 msgid "help_tcp_message"
-msgstr "Vul de boodschap in voor het CookiePolicy paneel. Dit mag HTML bevatten."
+msgstr "Vul de melding in voor het CookiePolicy paneel. Dit mag HTML bevatten."
 
 #. Default: "Enter the title for the CookiePolicy panel"
 #: ./controlpanel/cookiepolicy.py:34
