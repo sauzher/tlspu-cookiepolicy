@@ -12,6 +12,10 @@ jQuery(function() {
     var btn = document.getElementById("tlspu_cookiepolicy_button")
     var chk = document.getElementById("tlspu_cookiepolicy_agreed")
 
+    if (btn == null) {
+        return;
+    }
+
     btn.onclick = function() {
         acceptCookiePolicy();
         return false;
