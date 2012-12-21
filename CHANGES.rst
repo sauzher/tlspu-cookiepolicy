@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+1.1.3
+^^^^^
+
+- Fix javascript error if cookiepolicy is disabled (David Carter)
 
 1.1.2 (unreleased)
 ^^^^^^^^^^^^^^^^^^
