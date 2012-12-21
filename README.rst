@@ -133,3 +133,5 @@ Credits
 
     * `Maurits van Rees <http://zestsoftware.nl/>`_ - General
       improvement and Dutch translations.
+
+    * David Carter - Fix bug killing javascript where cookiepolicy is disabled
