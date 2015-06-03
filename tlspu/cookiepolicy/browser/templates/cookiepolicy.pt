@@ -4,7 +4,7 @@
      tal:condition="view/enabled">
     <div id="viewlet-cookiepolicy-wrapper">
     <h3 id="tlspu_cookiepolicy_title"
-        tal:content="view/title">Title</h1>
+        tal:content="view/title">Title</h3>
     <p id="tlspu_cookiepolicy_message"
         tal:content="structure view/message">Message</p>
     <form id="tlspu_cookiepolicy_form">
