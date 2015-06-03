@@ -1,12 +1,14 @@
 #viewlet-cookiepolicy {
     position: fixed;
-    bottom: 0px;
+    bottom: auto;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 10px;
     margin: 0 auto;
     padding: 10px;
     background-color: #4C4C4C;
-    z-index: 100;
+    z-index: 9999;
 }
 #viewlet-cookiepolicy a {
     color: #ABCEE8 !important;
