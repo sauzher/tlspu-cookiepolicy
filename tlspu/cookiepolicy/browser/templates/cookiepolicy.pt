@@ -2,7 +2,8 @@
      style="display:none"
      i18n:domain="tlspu.cookiepolicy"
      tal:condition="view/enabled">
-    <h1 id="tlspu_cookiepolicy_title"
+    <div id="viewlet-cookiepolicy-wrapper">
+    <h3 id="tlspu_cookiepolicy_title"
         tal:content="view/title">Title</h1>
     <p id="tlspu_cookiepolicy_message"
         tal:content="structure view/message">Message</p>
@@ -11,6 +12,7 @@
     <label for="tlspu_cookiepolicy_agreed" i18n:translate="">I have read and understood this message.</label>
     <button disabled="disabled" id="tlspu_cookiepolicy_button" value="hide" i18n:translate="">Hide this message</button>
     </form>
+</div>
 </div>
 
 <script type="text/javascript">

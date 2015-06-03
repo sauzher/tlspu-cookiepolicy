@@ -17,7 +17,7 @@
 
     <browser:viewlet
         name="tlspu.cookiepolicy"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class=".viewlets.CookiePolicyViewlet"
         layer="..interfaces.ICookiePolicyLayer"
         permission="zope.Public"
